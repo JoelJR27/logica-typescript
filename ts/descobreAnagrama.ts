@@ -22,7 +22,7 @@ const verificaSeEhAnagrama = (
   segundaPalavra: string
 ) => {
   const ordenaString = (string: string) =>
-    string.toLowerCase().split("").sort().join("");
-  return ordenaString(primeiraPalavra) === ordenaString(segundaPalavra);
+    string.toLowerCase().split("").sort().join(""); // Transforma a string recebida como parâmetro em um array com as letras em ordem alfabetica
+  return ordenaString(primeiraPalavra) === ordenaString(segundaPalavra); // Retorna o resultado da comparação das strings ordenadas alfabeticamente.
 };
 console.log(verificaSeEhAnagrama("amor", "roma"));
